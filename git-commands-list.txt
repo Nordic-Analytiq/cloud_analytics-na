@@ -186,3 +186,8 @@ To https://github.com/Nordic-Analytiq/cloud_analytics-na.git
    e77bb60..d78ff73  master -> master
 
 Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#make a private repo as public repo
+$ gh repo edit Nordic-Analytiq/cloud_analytics-na --visibility public --accept-visibility-change-consequences
+✓ Edited repository Nordic-Analytiq/cloud_analytics-na
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
