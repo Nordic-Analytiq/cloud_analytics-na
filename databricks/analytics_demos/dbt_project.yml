@@ -1,0 +1,12 @@
+name: analytics_demos
+version: "1.0.0"
+profile: databricks_demo   # matches a profile in profiles.yml
+
+models:
+  analytics_demos:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts

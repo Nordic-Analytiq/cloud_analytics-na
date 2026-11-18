@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_events
+    description: "Cleaned events from the Delta demo table"
+    columns:
+      - name: event_id
+        description: "Unique numeric identifier of the event (cast to int from the raw source)"
+        tests: [unique, not_null]
+      - name: event_date
+        description: "Date the event occurred (cast to date from the raw source)"
+        tests: [not_null]
+      - name: city
+        description: "Swedish city where the event occurred (uppercased)"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["STOCKHOLM", "GOTHENBURG", "MALMO"]
+
+  - name: fct_events_by_city
+    description: "Event counts per city, built incrementally with the merge strategy"
+    columns:
+      - name: city
+        description: "City the events are grouped by (unique key of the incremental merge)"
+      - name: event_count
+        description: "Number of events recorded for the city"
+      - name: first_event
+        description: "Earliest event date seen for the city"
+      - name: last_event
+        description: "Latest event date seen for the city (drives incremental loading)"

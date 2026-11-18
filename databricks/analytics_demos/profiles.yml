@@ -1,0 +1,10 @@
+databricks_demo:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: format_demo_catalog
+      schema: format_demo
+      host: dbc-af847cd2-6ea8.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/dc6eb079b1ab9575
+      token: "{{ env_var('DBT_DATABRICKS_TOKEN') }}"   # never hardcode tokens
