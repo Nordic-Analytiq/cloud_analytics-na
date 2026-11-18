@@ -1,0 +1,188 @@
+#Initialize empty Git repository in C:/Users/Hethi/github/cloud_analytics/.git/
+$ git init
+#list current user name
+$ git config user.name
+#To get started with GitHub CLI, please run:  gh auth login
+$ gh auth login
+?Where do you use GitHub? GitHub.com
+! Did you know that expiring tokens can be requested with --expiring? Read more at https://gh.io/gh-expiring-tokens
+? How would you like to authenticate GitHub CLI? Login with a web browser
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+
+! One-time code (C90F-4CC2) copied to clipboard
+Press Enter to open https://github.com/login/device in your browser...
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as Nordic-Analytiq
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#create new repository cloud_analytics
+$ gh repo create Nordic-Analytiq/cloud_analytics-na --public --source=. --remote=origin --push
+`--push` enabled but no commits found in C:\Users\Hethi\github\cloud_analytic
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        initial commit.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+$ git add .
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 88aafca] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 initial commit.txt
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+$ gh repo create cloud_analytics-na --private --source=. --remote=origin --push
+✓ Created repository Nordic-Analytiq/cloud_analytics-na on github.com
+  https://github.com/Nordic-Analytiq/cloud_analytics-na
+✓ Added remote https://github.com/Nordic-Analytiq/cloud_analytics-na.git
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Nordic-Analytiq/cloud_analytics-na.git
+ * [new branch]      HEAD -> master
+branch 'master' set up to track 'origin/master'.
+✓ Pushed commits to https://github.com/Nordic-Analytiq/cloud_analytics-na.git
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+
+$ gh repo view --web
+Opening https://github.com/Nordic-Analytiq/cloud_analytics-na in your browser.
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+$ pwd
+/c/Users/Hethi/github/cloud_analytics
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+$ mkdir dev-na
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#creating a new branch dev-na based on master in local
+$ git worktree add -b dev-na ./dev-na master
+Preparing worktree (new branch 'dev-na')
+HEAD is now at 88aafca Initial commit
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#creating a new branch dev-na based on master in github
+$ git push -u origin dev-na
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'dev-na' on GitHub by visiting:
+remote:      https://github.com/Nordic-Analytiq/cloud_analytics-na/pull/new/dev-na
+remote:
+To https://github.com/Nordic-Analytiq/cloud_analytics-na.git
+ * [new branch]      dev-na -> dev-na
+branch 'dev-na' set up to track 'origin/dev-na'.
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#finding the current working directory
+$ pwd
+/c/Users/Hethi/github/cloud_analytics
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#changing the current local working directory to where dev-na branch exist
+$ cd dev*
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics/dev-na (dev-na)
+#finding the git branch details
+$ git status
+On branch dev-na
+Your branch is up to date with 'origin/dev-na'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        na.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics/dev-na (dev-na)
+#staging changes in the current working directry for **next commit**. It doesn’t create a commit or push anything to GitHub.
+$ git add .
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics/dev-na (dev-na)
+#committing the changes
+$ git commit -m "test4"
+[dev-na d78ff73] test4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 na.txt
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics/dev-na (dev-na)
+#pusing the changes to remote branch dev-na
+$ git push -u origin dev-na
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 226 bytes | 226.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nordic-Analytiq/cloud_analytics-na.git
+   e77bb60..d78ff73  dev-na -> dev-na
+branch 'dev-na' set up to track 'origin/dev-na'.
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics/dev-na (dev-na)
+#changing the current working directory where master branch located
+$ cd ..
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#finding the git branch details
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dev-na/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#switching the branch to master
+$ git switch master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#downloading the latest branch and commit information from the remote named `origin` and updates remote-tracking branch `origin/master`. It **doesn’t** change your current branch or working files, and it doesn’t merge anything.
+$ git fetch origin
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#switching the branch to master
+$ git switch master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#fetching the latest `master` from `origin` and updates **your current branch** only if it can do so by fast-forwarding—without creating a merge commit. Run it while on your local `master` branch to update that branch. If your local branch and `origin/master` have diverged, the command stops without merging; you’ll need to decide how to reconcile them.
+$ git pull --ff-only origin master
+From https://github.com/Nordic-Analytiq/cloud_analytics-na
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#merging the changes from remote branch dev-na to local branch master
+$ git merge origin/dev-na
+Updating e77bb60..d78ff73
+Fast-forward
+ na.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 na.txt
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
+#pushing the changes from local branch master to remote branch master
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Nordic-Analytiq/cloud_analytics-na.git
+   e77bb60..d78ff73  master -> master
+
+Hethi@Hethi UCRT64 ~/github/cloud_analytics (master)
