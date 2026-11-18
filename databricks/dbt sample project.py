@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # DBTITLE 1,dbt overview
 # MAGIC %md
 # MAGIC # Sample dbt Project (Databricks)
@@ -269,3 +273,38 @@ print("\n=== SOURCES ===")
 for src_id, src in manifest["sources"].items():
     print(f"{src_id} ({src['database']}.{src['schema']}.{src['name']})")
     print(f"  description: {src.get('description') or '(none)'}")
+
+# COMMAND ----------
+
+# DBTITLE 1,Build self-contained dbt docs site
+import json
+
+# 'dbt docs serve' can't work from a notebook, and opening target/index.html
+# directly fails ('unable to load the manifest file and catalog file') because
+# the browser can't fetch the sibling JSON files. dbt ships index.html with
+# placeholders - var n={manifest:"MANIFEST.JSON INLINE DATA",
+# catalog:"CATALOG.JSON INLINE DATA"} - that its loader uses instead of
+# fetching when present. Splice the real JSON in to get a self-contained site
+# that opens from the workspace preview or from disk with no web server.
+proj = "/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos"
+
+with open(f"{proj}/target/index.html") as f:
+    html = f.read()
+with open(f"{proj}/target/manifest.json") as f:
+    manifest = f.read()
+with open(f"{proj}/target/catalog.json") as f:
+    catalog = f.read()
+
+# JSON is valid JS; escape "</" so a closing-tag sequence inside JSON strings
+# can't terminate the surrounding <script> block prematurely.
+out = html.replace(
+    '"MANIFEST.JSON INLINE DATA"', manifest.replace("</", "<\\/")
+).replace(
+    '"CATALOG.JSON INLINE DATA"', catalog.replace("</", "<\\/")
+)
+assert "INLINE DATA" not in out, "placeholder left behind - regenerate docs first"
+
+dest = f"{proj}/docs_site.html"
+with open(dest, "w") as f:
+    f.write(out)
+print("Self-contained docs site written to:", dest, f"({len(out):,} bytes)")

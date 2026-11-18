@@ -4407,3 +4407,1140 @@ SHOW TABLE EXTENDED IN `format_demo_catalog`.`format_demo_staging` LIKE 'stg_eve
 [0m17:45:49.336225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffd1ee9dbc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffd1eebd3ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffd1eea51280>]}
 [0m17:45:49.337007 [debug] [MainThread]: Flushing usage events
 [0m17:45:49.421891 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:47:03.242935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6175ad4590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61beaa1eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61beaa2780>]}
+
+
+============================== 19:47:03.247603 | 11443e84-8b44-4500-81be-1bda9f6e6127 ==============================
+[0m19:47:03.247603 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:47:03.256894 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'invocation_command': 'dbt -f /local_disk0/sandboxapi/shared-461508c5-9059-3223-8b70-731b281a38c2-a22c7246-c134-459c-995f-4c0f83a10ad5/1130522289779974426_1/connection.json', 'debug': 'False', 'log_path': '/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/logs', 'cache_selected_only': 'False', 'target_path': 'None', 'hints_enabled': 'True', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'indirect_selection': 'eager', 'empty': 'False', 'profiles_dir': '/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos', 'quiet': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'log_format': 'default', 'warn_error': 'None', 'no_print': 'None'}
+[0m19:47:04.478850 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m19:47:04.480069 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m19:47:04.480942 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m19:47:05.637380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '11443e84-8b44-4500-81be-1bda9f6e6127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171b61400>]}
+[0m19:47:05.732820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '11443e84-8b44-4500-81be-1bda9f6e6127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff617217af60>]}
+[0m19:47:05.741849 [info ] [MainThread]: Registered adapter: databricks=1.13.0
+[0m19:47:05.959526 [debug] [MainThread]: checksum: cfe165a3fa79b83e28da3a652e31f4b42d9764df65ae874ff942533f6b52a611, vars: {}, profile: databricks_demo, target: dev, version: 1.12.6
+[0m19:47:06.432789 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:47:06.433706 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:47:06.434304 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:47:06.446678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '11443e84-8b44-4500-81be-1bda9f6e6127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171602660>]}
+[0m19:47:06.696350 [debug] [MainThread]: Wrote artifact WritableManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/manifest.json
+[0m19:47:06.729702 [debug] [MainThread]: Wrote artifact SemanticManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/semantic_manifest.json
+[0m19:47:06.797908 [debug] [MainThread]: Wrote artifact OsiDocument to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/osi_document.json
+[0m19:47:06.826745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '11443e84-8b44-4500-81be-1bda9f6e6127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61714e8140>]}
+[0m19:47:06.889595 [info ] [MainThread]: Found 2 models, 5 data tests, 1 source, 783 macros
+[0m19:47:06.891422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '11443e84-8b44-4500-81be-1bda9f6e6127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171817230>]}
+[0m19:47:06.894356 [info ] [MainThread]: 
+[0m19:47:06.895931 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:47:06.897172 [info ] [MainThread]: 
+[0m19:47:06.898635 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m19:47:06.899302 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m19:47:06.906853 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog) - Creating connection
+[0m19:47:06.907702 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog'
+[0m19:47:06.922333 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog"
+[0m19:47:06.923239 [debug] [ThreadPool]: On list_format_demo_catalog: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "connection_name": "list_format_demo_catalog"} */
+
+    
+
+  SHOW SCHEMAS IN `format_demo_catalog`
+
+
+  
+[0m19:47:06.923927 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:07.355613 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-d612-1073-b7d0-e9a5de7234cd) - Created
+[0m19:47:10.469061 [debug] [ThreadPool]: SQL status: OK in 3.550 seconds
+[0m19:47:10.476703 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-d612-1073-b7d0-e9a5de7234cd, command-id=01f1e388-d630-1436-91fd-c01c241561e1) - Closing
+[0m19:47:10.578239 [debug] [ThreadPool]: On list_format_demo_catalog: Close
+[0m19:47:10.579246 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-d612-1073-b7d0-e9a5de7234cd) - Closing
+[0m19:47:10.653382 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog) - Creating connection
+[0m19:47:10.654493 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog'
+[0m19:47:10.656507 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog"
+[0m19:47:10.657243 [debug] [ThreadPool]: On list_format_demo_catalog: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "connection_name": "list_format_demo_catalog"} */
+
+    
+
+  SHOW SCHEMAS IN `format_demo_catalog`
+
+
+  
+[0m19:47:10.659448 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:10.830370 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-d835-1e0e-93ff-41f061ca6add) - Created
+[0m19:47:11.134148 [debug] [ThreadPool]: SQL status: OK in 0.470 seconds
+[0m19:47:11.136735 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-d835-1e0e-93ff-41f061ca6add, command-id=01f1e388-d842-1484-abeb-cf39170e7f4a) - Closing
+[0m19:47:11.137749 [debug] [ThreadPool]: On list_format_demo_catalog: Close
+[0m19:47:11.138441 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-d835-1e0e-93ff-41f061ca6add) - Closing
+[0m19:47:11.205370 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog_format_demo_staging) - Creating connection
+[0m19:47:11.207160 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog_format_demo_staging'
+[0m19:47:11.211993 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog_format_demo_staging"
+[0m19:47:11.213270 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_staging: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "connection_name": "list_format_demo_catalog_format_demo_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'format_demo_catalog'
+  AND table_schema = 'format_demo_staging'
+
+  
+[0m19:47:11.216786 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:11.382539 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-d88b-105c-ba9b-5dd2e1af71cb) - Created
+[0m19:47:12.808315 [debug] [ThreadPool]: SQL status: OK in 1.590 seconds
+[0m19:47:12.811658 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-d88b-105c-ba9b-5dd2e1af71cb, command-id=01f1e388-d897-12d3-80c0-ccf89177c1b7) - Closing
+[0m19:47:12.812805 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_staging: Close
+[0m19:47:12.813578 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-d88b-105c-ba9b-5dd2e1af71cb) - Closing
+[0m19:47:12.864721 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog_format_demo_marts) - Creating connection
+[0m19:47:12.865860 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog_format_demo_marts'
+[0m19:47:12.867314 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog_format_demo_marts"
+[0m19:47:12.868092 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_marts: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "connection_name": "list_format_demo_catalog_format_demo_marts"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'format_demo_catalog'
+  AND table_schema = 'format_demo_marts'
+
+  
+[0m19:47:12.868814 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:13.008572 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-d985-101b-9b92-5fdc1f4e143e) - Created
+[0m19:47:13.428275 [debug] [ThreadPool]: SQL status: OK in 0.560 seconds
+[0m19:47:13.431027 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-d985-101b-9b92-5fdc1f4e143e, command-id=01f1e388-d98e-160f-a7da-e136f640abfb) - Closing
+[0m19:47:13.432045 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_marts: Close
+[0m19:47:13.432817 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-d985-101b-9b92-5fdc1f4e143e) - Closing
+[0m19:47:13.495992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '11443e84-8b44-4500-81be-1bda9f6e6127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61723d9fd0>]}
+[0m19:47:13.501444 [debug] [Thread-35 ]: Began running node model.analytics_demos.stg_events
+[0m19:47:13.502709 [info ] [Thread-35 ]: 1 of 2 START sql view model format_demo_staging.stg_events ..................... [RUN]
+[0m19:47:13.504834 [debug] [Thread-35 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.analytics_demos.stg_events) - Creating connection
+[0m19:47:13.505742 [debug] [Thread-35 ]: Acquiring new databricks connection 'model.analytics_demos.stg_events'
+[0m19:47:13.506455 [debug] [Thread-35 ]: Began compiling node model.analytics_demos.stg_events
+[0m19:47:13.513432 [debug] [Thread-35 ]: Writing injected SQL for node "model.analytics_demos.stg_events"
+[0m19:47:13.536470 [debug] [Thread-35 ]: Began executing node model.analytics_demos.stg_events
+[0m19:47:13.546720 [debug] [Thread-35 ]: MATERIALIZING VIEW
+[0m19:47:13.563366 [debug] [Thread-35 ]: Applying REPLACE to: `format_demo_catalog`.`format_demo_staging`.`stg_events`
+[0m19:47:13.592554 [debug] [Thread-35 ]: Creating view `format_demo_catalog`.`format_demo_staging`.`stg_events`
+[0m19:47:13.606922 [debug] [Thread-35 ]: Writing runtime sql for node "model.analytics_demos.stg_events"
+[0m19:47:13.626730 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.stg_events"
+[0m19:47:13.628147 [debug] [Thread-35 ]: On model.analytics_demos.stg_events: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.stg_events"} */
+
+      
+  
+  
+  
+  create or replace view `format_demo_catalog`.`format_demo_staging`.`stg_events`
+  
+  
+  as (
+    -- models/staging/stg_events.sql
+-- Staging model: clean + rename the raw source.
+-- The source() call below resolves to format_demo_catalog.format_demo.events_delta
+
+with source as (
+
+    select * from `format_demo_catalog`.`format_demo`.`events_delta`
+
+),
+
+renamed as (
+
+    select
+        cast(id as int)             as event_id,
+        cast(event_date as date)    as event_date,
+        upper(city)                 as city
+    from source
+
+)
+
+select * from renamed
+where event_date >= '2026-11-01'
+  )
+
+
+    
+[0m19:47:13.632352 [debug] [Thread-35 ]: Opening a new connection, currently in state init
+[0m19:47:13.807143 [debug] [Thread-35 ]: Databricks adapter: Connection(session-id=01f1e388-d9fa-1a03-8ecf-9fd4470a943e) - Created
+[0m19:47:15.758594 [debug] [Thread-35 ]: SQL status: OK in 2.130 seconds
+[0m19:47:15.760550 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-d9fa-1a03-8ecf-9fd4470a943e, command-id=01f1e388-da08-1bdb-a4f3-40b370ef8729) - Closing
+[0m19:47:15.769379 [debug] [Thread-35 ]: Applying tags to relation None
+[0m19:47:15.783332 [debug] [Thread-35 ]: On model.analytics_demos.stg_events: Close
+[0m19:47:15.784426 [debug] [Thread-35 ]: Databricks adapter: Connection(session-id=01f1e388-d9fa-1a03-8ecf-9fd4470a943e) - Closing
+[0m19:47:15.852906 [debug] [Thread-35 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '11443e84-8b44-4500-81be-1bda9f6e6127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6172141370>]}
+[0m19:47:15.854313 [info ] [Thread-35 ]: 1 of 2 OK created sql view model format_demo_staging.stg_events ................ [[32mOK[0m in 2.35s]
+[0m19:47:15.856790 [debug] [Thread-35 ]: Finished running node model.analytics_demos.stg_events
+[0m19:47:15.858322 [debug] [Thread-35 ]: Began running node model.analytics_demos.fct_events_by_city
+[0m19:47:15.859312 [info ] [Thread-35 ]: 2 of 2 START sql incremental model format_demo_marts.fct_events_by_city ........ [RUN]
+[0m19:47:15.861023 [debug] [Thread-35 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.analytics_demos.fct_events_by_city) - Creating connection
+[0m19:47:15.861905 [debug] [Thread-35 ]: Acquiring new databricks connection 'model.analytics_demos.fct_events_by_city'
+[0m19:47:15.862738 [debug] [Thread-35 ]: Began compiling node model.analytics_demos.fct_events_by_city
+[0m19:47:15.869855 [debug] [Thread-35 ]: Writing injected SQL for node "model.analytics_demos.fct_events_by_city"
+[0m19:47:15.886742 [debug] [Thread-35 ]: Began executing node model.analytics_demos.fct_events_by_city
+[0m19:47:15.929598 [debug] [Thread-35 ]: MATERIALIZING INCREMENTAL
+[0m19:47:15.962956 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.fct_events_by_city"
+[0m19:47:15.964010 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.fct_events_by_city"} */
+SELECT 
+    column_name,
+    mask_name,
+    using_columns
+  FROM `system`.`information_schema`.`column_masks`
+  WHERE table_catalog = 'format_demo_catalog'
+    AND table_schema = 'format_demo_marts'
+    AND table_name = 'fct_events_by_city';
+  
+[0m19:47:15.964799 [debug] [Thread-35 ]: Opening a new connection, currently in state init
+[0m19:47:16.102780 [debug] [Thread-35 ]: Databricks adapter: Connection(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04) - Created
+[0m19:47:16.495885 [debug] [Thread-35 ]: SQL status: OK in 0.530 seconds
+[0m19:47:16.498604 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04, command-id=01f1e388-db66-1b36-b487-bc3bf828bac6) - Closing
+[0m19:47:16.504517 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.fct_events_by_city"
+[0m19:47:16.505530 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.fct_events_by_city"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `format_demo_catalog`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'format_demo_catalog'
+    AND table_schema = 'format_demo_marts'
+    AND table_name = 'fct_events_by_city'
+[0m19:47:16.901371 [debug] [Thread-35 ]: SQL status: OK in 0.390 seconds
+[0m19:47:16.904297 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04, command-id=01f1e388-dba4-1735-be6c-481edeaa6018) - Closing
+[0m19:47:16.907744 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.fct_events_by_city"
+[0m19:47:16.908595 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.fct_events_by_city"} */
+SHOW TBLPROPERTIES `format_demo_catalog`.`format_demo_marts`.`fct_events_by_city`
+  
+[0m19:47:17.546334 [debug] [Thread-35 ]: SQL status: OK in 0.640 seconds
+[0m19:47:17.549261 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04, command-id=01f1e388-dbe1-1f85-9750-6b0b7aa77c3b) - Closing
+[0m19:47:17.553011 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.fct_events_by_city"
+[0m19:47:17.553985 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.fct_events_by_city"} */
+describe extended `format_demo_catalog`.`format_demo_marts`.`fct_events_by_city`
+  
+[0m19:47:17.782673 [debug] [Thread-35 ]: SQL status: OK in 0.230 seconds
+[0m19:47:17.785937 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04, command-id=01f1e388-dc44-1448-8024-a44e5dacb5cd) - Closing
+[0m19:47:17.787349 [debug] [Thread-35 ]: Databricks adapter: Getting diff for ColumnCommentsConfig: comments={'city': 'City the events are grouped by (unique key of the incremental merge)', 'event_count': 'Number of events recorded for the city', 'first_event': 'Earliest event date seen for the city', 'last_event': 'Latest event date seen for the city (drives incremental loading)'} persist=False and comments={'city': '', 'event_count': '', 'first_event': '', 'last_event': ''} persist=False
+[0m19:47:17.799211 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.fct_events_by_city"
+[0m19:47:17.800094 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.fct_events_by_city"} */
+
+  
+    create or replace temporary view `fct_events_by_city__dbt_tmp` as
+      -- models/marts/fct_events_by_city.sql
+-- Incremental model with MERGE strategy (native to Databricks tables).
+-- The ref() call below creates a dependency on the staging model.
+
+
+with events as (
+
+    select * from `format_demo_catalog`.`format_demo_staging`.`stg_events`
+
+),
+
+aggregated as (
+
+    select
+        city,
+        count(*)           as event_count,
+        min(event_date)    as first_event,
+        max(event_date)    as last_event
+    from events
+
+    
+    -- On incremental runs, only process rows newer than what's already loaded
+    where event_date > (select coalesce(max(last_event), '1900-01-01') from `format_demo_catalog`.`format_demo_marts`.`fct_events_by_city`)
+    
+
+    group by city
+
+)
+
+select * from aggregated
+  
+[0m19:47:18.362508 [debug] [Thread-35 ]: SQL status: OK in 0.560 seconds
+[0m19:47:18.364436 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04, command-id=01f1e388-dc69-17bc-bd95-ecd829f87ce7) - Closing
+[0m19:47:18.394249 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.fct_events_by_city"
+[0m19:47:18.395400 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.fct_events_by_city"} */
+
+    
+  DESCRIBE TABLE EXTENDED `format_demo_catalog`.`format_demo_marts`.`fct_events_by_city` AS JSON
+
+  
+[0m19:47:18.638595 [debug] [Thread-35 ]: SQL status: OK in 0.240 seconds
+[0m19:47:18.642395 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04, command-id=01f1e388-dcc4-1d77-9011-5359e9c07072) - Closing
+[0m19:47:18.644844 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.fct_events_by_city"
+[0m19:47:18.645949 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.fct_events_by_city"} */
+
+    
+  DESCRIBE TABLE EXTENDED `fct_events_by_city__dbt_tmp` AS JSON
+
+  
+[0m19:47:18.776057 [debug] [Thread-35 ]: SQL status: OK in 0.130 seconds
+[0m19:47:18.778923 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04, command-id=01f1e388-dced-126d-ba70-5d447ac837ae) - Closing
+[0m19:47:18.792474 [debug] [Thread-35 ]: Writing runtime sql for node "model.analytics_demos.fct_events_by_city"
+[0m19:47:18.814259 [debug] [Thread-35 ]: Using databricks connection "model.analytics_demos.fct_events_by_city"
+[0m19:47:18.815379 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "11443e84-8b44-4500-81be-1bda9f6e6127", "node_id": "model.analytics_demos.fct_events_by_city"} */
+-- back compat for old kwarg name
+  
+  
+  
+  
+  
+  
+      
+          
+          
+      
+  
+
+    merge
+    into
+        `format_demo_catalog`.`format_demo_marts`.`fct_events_by_city` as DBT_INTERNAL_DEST
+    using
+        `fct_events_by_city__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on
+        
+              DBT_INTERNAL_SOURCE.`city` <=> DBT_INTERNAL_DEST.`city`
+          
+    when matched
+        then update set
+            *
+    when not matched
+        then insert
+            *
+
+[0m19:47:23.668697 [debug] [Thread-35 ]: SQL status: OK in 4.850 seconds
+[0m19:47:23.670547 [debug] [Thread-35 ]: Databricks adapter: Cursor(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04, command-id=01f1e388-dd05-145c-bfe6-8f114440afc9) - Closing
+[0m19:47:23.686239 [debug] [Thread-35 ]: On model.analytics_demos.fct_events_by_city: Close
+[0m19:47:23.687142 [debug] [Thread-35 ]: Databricks adapter: Connection(session-id=01f1e388-db5d-1705-86f5-c9430ec0bd04) - Closing
+[0m19:47:23.755571 [debug] [Thread-35 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '11443e84-8b44-4500-81be-1bda9f6e6127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61714d54f0>]}
+[0m19:47:23.756968 [info ] [Thread-35 ]: 2 of 2 OK created sql incremental model format_demo_marts.fct_events_by_city ... [[32mOK[0m in 7.89s]
+[0m19:47:23.758980 [debug] [Thread-35 ]: Finished running node model.analytics_demos.fct_events_by_city
+[0m19:47:23.760711 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m19:47:23.761428 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m19:47:23.762405 [info ] [MainThread]: 
+[0m19:47:23.764056 [info ] [MainThread]: Finished running 1 incremental model, 1 view model in 0 hours 0 minutes and 16.86 seconds (16.86s).
+[0m19:47:23.765728 [debug] [MainThread]: Command end result
+[0m19:47:23.832772 [debug] [MainThread]: Wrote artifact WritableManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/manifest.json
+[0m19:47:23.836846 [debug] [MainThread]: Wrote artifact SemanticManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/semantic_manifest.json
+[0m19:47:23.840591 [debug] [MainThread]: Wrote artifact OsiDocument to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/osi_document.json
+[0m19:47:23.848063 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/run_results.json
+[0m19:47:23.848704 [info ] [MainThread]: 
+[0m19:47:23.850108 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:47:23.851327 [info ] [MainThread]: 
+[0m19:47:23.852507 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m19:47:23.854060 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 23.436922, "process_in_blocks": "189464", "process_kernel_time": 1.076155, "process_mem_max_rss": "443692", "process_out_blocks": "35632", "process_user_time": 12.804252}
+[0m19:47:23.855071 [debug] [MainThread]: Command `cli run` succeeded at 19:47:23.854948 after 23.44 seconds
+[0m19:47:23.855821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6175681b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61718c9970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6175ab2b40>]}
+[0m19:47:23.856529 [debug] [MainThread]: Flushing usage events
+[0m19:47:23.938852 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:47:24.519870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61755f10a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61749e8d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61749e9d00>]}
+
+
+============================== 19:47:24.520761 | 52e3c9d8-0b09-49b6-a7ed-372f0093a21b ==============================
+[0m19:47:24.520761 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:47:24.522630 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'invocation_command': 'dbt -f /local_disk0/sandboxapi/shared-461508c5-9059-3223-8b70-731b281a38c2-a22c7246-c134-459c-995f-4c0f83a10ad5/1130522289779974426_1/connection.json', 'debug': 'False', 'log_path': '/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/logs', 'cache_selected_only': 'False', 'target_path': 'None', 'hints_enabled': 'True', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'profiles_dir': '/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos', 'quiet': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'log_format': 'default', 'warn_error': 'None', 'no_print': 'None'}
+[0m19:47:24.843685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '52e3c9d8-0b09-49b6-a7ed-372f0093a21b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171b60e90>]}
+[0m19:47:24.845630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '52e3c9d8-0b09-49b6-a7ed-372f0093a21b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171a1ddc0>]}
+[0m19:47:24.846765 [info ] [MainThread]: Registered adapter: databricks=1.13.0
+[0m19:47:24.967120 [debug] [MainThread]: checksum: cfe165a3fa79b83e28da3a652e31f4b42d9764df65ae874ff942533f6b52a611, vars: {}, profile: databricks_demo, target: dev, version: 1.12.6
+[0m19:47:25.012591 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:47:25.013573 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:47:25.014201 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:47:25.019203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '52e3c9d8-0b09-49b6-a7ed-372f0093a21b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61708e05f0>]}
+[0m19:47:25.082612 [debug] [MainThread]: Wrote artifact WritableManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/manifest.json
+[0m19:47:25.087526 [debug] [MainThread]: Wrote artifact SemanticManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/semantic_manifest.json
+[0m19:47:25.091502 [debug] [MainThread]: Wrote artifact OsiDocument to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/osi_document.json
+[0m19:47:25.104568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '52e3c9d8-0b09-49b6-a7ed-372f0093a21b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff617088f680>]}
+[0m19:47:25.105395 [info ] [MainThread]: Found 2 models, 5 data tests, 1 source, 783 macros
+[0m19:47:25.106812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52e3c9d8-0b09-49b6-a7ed-372f0093a21b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61713b65a0>]}
+[0m19:47:25.108385 [info ] [MainThread]: 
+[0m19:47:25.109745 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:47:25.110919 [info ] [MainThread]: 
+[0m19:47:25.112543 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m19:47:25.113209 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m19:47:25.114554 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog_format_demo_staging) - Creating connection
+[0m19:47:25.115258 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog_format_demo_staging'
+[0m19:47:25.117358 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog_format_demo_staging"
+[0m19:47:25.118082 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_staging: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "52e3c9d8-0b09-49b6-a7ed-372f0093a21b", "connection_name": "list_format_demo_catalog_format_demo_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'format_demo_catalog'
+  AND table_schema = 'format_demo_staging'
+
+  
+[0m19:47:25.118748 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:25.280293 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e0d5-1b48-90b4-81a1ab18abd6) - Created
+[0m19:47:25.587378 [debug] [ThreadPool]: SQL status: OK in 0.470 seconds
+[0m19:47:25.590262 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e0d5-1b48-90b4-81a1ab18abd6, command-id=01f1e388-e0df-166e-81e6-a619024a0be3) - Closing
+[0m19:47:25.591313 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_staging: Close
+[0m19:47:25.592112 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e0d5-1b48-90b4-81a1ab18abd6) - Closing
+[0m19:47:25.653415 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog_format_demo_marts) - Creating connection
+[0m19:47:25.654766 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog_format_demo_marts'
+[0m19:47:25.659154 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog_format_demo_marts"
+[0m19:47:25.660443 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_marts: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "52e3c9d8-0b09-49b6-a7ed-372f0093a21b", "connection_name": "list_format_demo_catalog_format_demo_marts"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'format_demo_catalog'
+  AND table_schema = 'format_demo_marts'
+
+  
+[0m19:47:25.661210 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:25.800399 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e125-111b-a53b-5af95a684355) - Created
+[0m19:47:26.124688 [debug] [ThreadPool]: SQL status: OK in 0.460 seconds
+[0m19:47:26.127632 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e125-111b-a53b-5af95a684355, command-id=01f1e388-e12e-144f-abcd-98f30db3ab41) - Closing
+[0m19:47:26.128677 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_marts: Close
+[0m19:47:26.129417 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e125-111b-a53b-5af95a684355) - Closing
+[0m19:47:26.191845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52e3c9d8-0b09-49b6-a7ed-372f0093a21b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61708e2630>]}
+[0m19:47:26.194104 [debug] [Thread-43 ]: Began running node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:47:26.194993 [info ] [Thread-43 ]: 1 of 5 START test accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO  [RUN]
+[0m19:47:26.196911 [debug] [Thread-43 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e) - Creating connection
+[0m19:47:26.197817 [debug] [Thread-43 ]: Acquiring new databricks connection 'test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e'
+[0m19:47:26.198561 [debug] [Thread-43 ]: Began compiling node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:47:26.238247 [debug] [Thread-43 ]: Writing injected SQL for node "test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e"
+[0m19:47:26.277078 [debug] [Thread-43 ]: Began executing node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:47:26.316431 [debug] [Thread-43 ]: Writing runtime sql for node "test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e"
+[0m19:47:26.341132 [debug] [Thread-43 ]: Using databricks connection "test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e"
+[0m19:47:26.343994 [debug] [Thread-43 ]: On test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "52e3c9d8-0b09-49b6-a7ed-372f0093a21b", "node_id": "test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        city as value_field,
+        count(*) as n_records
+
+    from `format_demo_catalog`.`format_demo_staging`.`stg_events`
+    group by city
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'STOCKHOLM','GOTHENBURG','MALMO'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:47:26.345357 [debug] [Thread-43 ]: Opening a new connection, currently in state init
+[0m19:47:26.514436 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e18e-1f14-a287-e539fa0e0f9d) - Created
+[0m19:47:27.015806 [debug] [Thread-43 ]: SQL status: OK in 0.670 seconds
+[0m19:47:27.020270 [debug] [Thread-43 ]: Databricks adapter: Cursor(session-id=01f1e388-e18e-1f14-a287-e539fa0e0f9d, command-id=01f1e388-e19b-1835-b98d-a3a02601b7b7) - Closing
+[0m19:47:27.023653 [debug] [Thread-43 ]: On test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e: Close
+[0m19:47:27.024513 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e18e-1f14-a287-e539fa0e0f9d) - Closing
+[0m19:47:27.085781 [info ] [Thread-43 ]: 1 of 5 PASS accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO ...... [[32mPASS[0m in 0.89s]
+[0m19:47:27.088389 [debug] [Thread-43 ]: Finished running node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:47:27.089220 [debug] [Thread-43 ]: Began running node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:47:27.090039 [info ] [Thread-43 ]: 2 of 5 START test not_null_stg_events_city ..................................... [RUN]
+[0m19:47:27.092153 [debug] [Thread-43 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_city.c76a7ce38b) - Creating connection
+[0m19:47:27.092961 [debug] [Thread-43 ]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_city.c76a7ce38b'
+[0m19:47:27.093687 [debug] [Thread-43 ]: Began compiling node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:47:27.108905 [debug] [Thread-43 ]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_city.c76a7ce38b"
+[0m19:47:27.125571 [debug] [Thread-43 ]: Began executing node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:47:27.129851 [debug] [Thread-43 ]: Writing runtime sql for node "test.analytics_demos.not_null_stg_events_city.c76a7ce38b"
+[0m19:47:27.146068 [debug] [Thread-43 ]: Using databricks connection "test.analytics_demos.not_null_stg_events_city.c76a7ce38b"
+[0m19:47:27.147330 [debug] [Thread-43 ]: On test.analytics_demos.not_null_stg_events_city.c76a7ce38b: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "52e3c9d8-0b09-49b6-a7ed-372f0093a21b", "node_id": "test.analytics_demos.not_null_stg_events_city.c76a7ce38b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select city
+from `format_demo_catalog`.`format_demo_staging`.`stg_events`
+where city is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:47:27.148193 [debug] [Thread-43 ]: Opening a new connection, currently in state init
+[0m19:47:27.287633 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e208-1349-aa43-5f6f15153a15) - Created
+[0m19:47:27.677057 [debug] [Thread-43 ]: SQL status: OK in 0.530 seconds
+[0m19:47:27.679945 [debug] [Thread-43 ]: Databricks adapter: Cursor(session-id=01f1e388-e208-1349-aa43-5f6f15153a15, command-id=01f1e388-e211-1c66-91a8-4ef8be22796d) - Closing
+[0m19:47:27.681089 [debug] [Thread-43 ]: On test.analytics_demos.not_null_stg_events_city.c76a7ce38b: Close
+[0m19:47:27.681878 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e208-1349-aa43-5f6f15153a15) - Closing
+[0m19:47:27.744465 [info ] [Thread-43 ]: 2 of 5 PASS not_null_stg_events_city ........................................... [[32mPASS[0m in 0.65s]
+[0m19:47:27.746772 [debug] [Thread-43 ]: Finished running node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:47:27.747597 [debug] [Thread-43 ]: Began running node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:47:27.748402 [info ] [Thread-43 ]: 3 of 5 START test not_null_stg_events_event_date ............................... [RUN]
+[0m19:47:27.750177 [debug] [Thread-43 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_event_date.f160b8d054) - Creating connection
+[0m19:47:27.750979 [debug] [Thread-43 ]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_event_date.f160b8d054'
+[0m19:47:27.751712 [debug] [Thread-43 ]: Began compiling node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:47:27.762697 [debug] [Thread-43 ]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_event_date.f160b8d054"
+[0m19:47:27.785230 [debug] [Thread-43 ]: Began executing node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:47:27.790547 [debug] [Thread-43 ]: Writing runtime sql for node "test.analytics_demos.not_null_stg_events_event_date.f160b8d054"
+[0m19:47:27.812225 [debug] [Thread-43 ]: Using databricks connection "test.analytics_demos.not_null_stg_events_event_date.f160b8d054"
+[0m19:47:27.813688 [debug] [Thread-43 ]: On test.analytics_demos.not_null_stg_events_event_date.f160b8d054: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "52e3c9d8-0b09-49b6-a7ed-372f0093a21b", "node_id": "test.analytics_demos.not_null_stg_events_event_date.f160b8d054"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_date
+from `format_demo_catalog`.`format_demo_staging`.`stg_events`
+where event_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:47:27.820686 [debug] [Thread-43 ]: Opening a new connection, currently in state init
+[0m19:47:27.971506 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e26f-1cde-86e1-db9b73e46573) - Created
+[0m19:47:28.284663 [debug] [Thread-43 ]: SQL status: OK in 0.460 seconds
+[0m19:47:28.287740 [debug] [Thread-43 ]: Databricks adapter: Cursor(session-id=01f1e388-e26f-1cde-86e1-db9b73e46573, command-id=01f1e388-e27a-1387-8367-23f1bd3909bb) - Closing
+[0m19:47:28.289068 [debug] [Thread-43 ]: On test.analytics_demos.not_null_stg_events_event_date.f160b8d054: Close
+[0m19:47:28.289882 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e26f-1cde-86e1-db9b73e46573) - Closing
+[0m19:47:28.345951 [info ] [Thread-43 ]: 3 of 5 PASS not_null_stg_events_event_date ..................................... [[32mPASS[0m in 0.60s]
+[0m19:47:28.350578 [debug] [Thread-43 ]: Finished running node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:47:28.351530 [debug] [Thread-43 ]: Began running node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:47:28.352512 [info ] [Thread-43 ]: 4 of 5 START test not_null_stg_events_event_id ................................. [RUN]
+[0m19:47:28.357424 [debug] [Thread-43 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_event_id.715b3f7012) - Creating connection
+[0m19:47:28.362411 [debug] [Thread-43 ]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_event_id.715b3f7012'
+[0m19:47:28.363326 [debug] [Thread-43 ]: Began compiling node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:47:28.375460 [debug] [Thread-43 ]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_event_id.715b3f7012"
+[0m19:47:28.378560 [debug] [Thread-43 ]: Began executing node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:47:28.381710 [debug] [Thread-43 ]: Writing runtime sql for node "test.analytics_demos.not_null_stg_events_event_id.715b3f7012"
+[0m19:47:28.383320 [debug] [Thread-43 ]: Using databricks connection "test.analytics_demos.not_null_stg_events_event_id.715b3f7012"
+[0m19:47:28.384545 [debug] [Thread-43 ]: On test.analytics_demos.not_null_stg_events_event_id.715b3f7012: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "52e3c9d8-0b09-49b6-a7ed-372f0093a21b", "node_id": "test.analytics_demos.not_null_stg_events_event_id.715b3f7012"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_id
+from `format_demo_catalog`.`format_demo_staging`.`stg_events`
+where event_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:47:28.385269 [debug] [Thread-43 ]: Opening a new connection, currently in state init
+[0m19:47:28.529985 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e2c4-1b2c-b840-11da51e80ebc) - Created
+[0m19:47:28.883198 [debug] [Thread-43 ]: SQL status: OK in 0.500 seconds
+[0m19:47:28.886083 [debug] [Thread-43 ]: Databricks adapter: Cursor(session-id=01f1e388-e2c4-1b2c-b840-11da51e80ebc, command-id=01f1e388-e2ce-1ed4-b30c-10cb2e1da886) - Closing
+[0m19:47:28.887339 [debug] [Thread-43 ]: On test.analytics_demos.not_null_stg_events_event_id.715b3f7012: Close
+[0m19:47:28.888217 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e2c4-1b2c-b840-11da51e80ebc) - Closing
+[0m19:47:28.959374 [info ] [Thread-43 ]: 4 of 5 PASS not_null_stg_events_event_id ....................................... [[32mPASS[0m in 0.60s]
+[0m19:47:28.962101 [debug] [Thread-43 ]: Finished running node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:47:28.963065 [debug] [Thread-43 ]: Began running node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:47:28.963868 [info ] [Thread-43 ]: 5 of 5 START test unique_stg_events_event_id ................................... [RUN]
+[0m19:47:28.965722 [debug] [Thread-43 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.unique_stg_events_event_id.66ebb17438) - Creating connection
+[0m19:47:28.966485 [debug] [Thread-43 ]: Acquiring new databricks connection 'test.analytics_demos.unique_stg_events_event_id.66ebb17438'
+[0m19:47:28.967123 [debug] [Thread-43 ]: Began compiling node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:47:28.981215 [debug] [Thread-43 ]: Writing injected SQL for node "test.analytics_demos.unique_stg_events_event_id.66ebb17438"
+[0m19:47:28.983355 [debug] [Thread-43 ]: Began executing node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:47:28.988783 [debug] [Thread-43 ]: Writing runtime sql for node "test.analytics_demos.unique_stg_events_event_id.66ebb17438"
+[0m19:47:28.991843 [debug] [Thread-43 ]: Using databricks connection "test.analytics_demos.unique_stg_events_event_id.66ebb17438"
+[0m19:47:28.992733 [debug] [Thread-43 ]: On test.analytics_demos.unique_stg_events_event_id.66ebb17438: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "52e3c9d8-0b09-49b6-a7ed-372f0093a21b", "node_id": "test.analytics_demos.unique_stg_events_event_id.66ebb17438"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    event_id as unique_field,
+    count(*) as n_records
+
+from `format_demo_catalog`.`format_demo_staging`.`stg_events`
+where event_id is not null
+group by event_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:47:28.993462 [debug] [Thread-43 ]: Opening a new connection, currently in state init
+[0m19:47:29.134874 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e321-1c21-932d-060761633164) - Created
+[0m19:47:29.494355 [debug] [Thread-43 ]: SQL status: OK in 0.500 seconds
+[0m19:47:29.497361 [debug] [Thread-43 ]: Databricks adapter: Cursor(session-id=01f1e388-e321-1c21-932d-060761633164, command-id=01f1e388-e32b-1937-8452-3d78f6174820) - Closing
+[0m19:47:29.498617 [debug] [Thread-43 ]: On test.analytics_demos.unique_stg_events_event_id.66ebb17438: Close
+[0m19:47:29.499396 [debug] [Thread-43 ]: Databricks adapter: Connection(session-id=01f1e388-e321-1c21-932d-060761633164) - Closing
+[0m19:47:29.554410 [info ] [Thread-43 ]: 5 of 5 PASS unique_stg_events_event_id ......................................... [[32mPASS[0m in 0.59s]
+[0m19:47:29.557519 [debug] [Thread-43 ]: Finished running node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:47:29.559330 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m19:47:29.560150 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m19:47:29.561149 [info ] [MainThread]: 
+[0m19:47:29.562919 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 4.45 seconds (4.45s).
+[0m19:47:29.565384 [debug] [MainThread]: Command end result
+[0m19:47:29.639418 [debug] [MainThread]: Wrote artifact WritableManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/manifest.json
+[0m19:47:29.644305 [debug] [MainThread]: Wrote artifact SemanticManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/semantic_manifest.json
+[0m19:47:29.650220 [debug] [MainThread]: Wrote artifact OsiDocument to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/osi_document.json
+[0m19:47:29.652176 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/run_results.json
+[0m19:47:29.652876 [info ] [MainThread]: 
+[0m19:47:29.654967 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:47:29.656675 [info ] [MainThread]: 
+[0m19:47:29.658168 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m19:47:29.659944 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 5.3012385, "process_in_blocks": "190072", "process_kernel_time": 1.215761, "process_mem_max_rss": "457076", "process_out_blocks": "35672", "process_user_time": 14.120768}
+[0m19:47:29.660833 [debug] [MainThread]: Command `cli test` succeeded at 19:47:29.660706 after 5.30 seconds
+[0m19:47:29.661579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171bb56a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6174ac7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171a58f80>]}
+[0m19:47:29.662290 [debug] [MainThread]: Flushing usage events
+[0m19:47:29.746039 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:47:36.116731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61be8b77a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff616f1d5fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff616f1d79b0>]}
+
+
+============================== 19:47:36.117596 | 22d6ad58-7f19-4284-9227-fb49f7f525cc ==============================
+[0m19:47:36.117596 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:47:36.119223 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'invocation_command': 'dbt -f /local_disk0/sandboxapi/shared-461508c5-9059-3223-8b70-731b281a38c2-a22c7246-c134-459c-995f-4c0f83a10ad5/1130522289779974426_1/connection.json', 'debug': 'False', 'log_path': '/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/logs', 'cache_selected_only': 'False', 'target_path': 'None', 'hints_enabled': 'True', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'profiles_dir': '/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos', 'quiet': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'log_format': 'default', 'warn_error': 'None', 'no_print': 'None'}
+[0m19:47:36.538861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '22d6ad58-7f19-4284-9227-fb49f7f525cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61bea24140>]}
+[0m19:47:36.540954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '22d6ad58-7f19-4284-9227-fb49f7f525cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff616f1d5dc0>]}
+[0m19:47:36.542231 [info ] [MainThread]: Registered adapter: databricks=1.13.0
+[0m19:47:36.719835 [debug] [MainThread]: checksum: cfe165a3fa79b83e28da3a652e31f4b42d9764df65ae874ff942533f6b52a611, vars: {}, profile: databricks_demo, target: dev, version: 1.12.6
+[0m19:47:36.765526 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:47:36.766346 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:47:36.766989 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:47:36.771958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '22d6ad58-7f19-4284-9227-fb49f7f525cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61714205f0>]}
+[0m19:47:36.776484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '22d6ad58-7f19-4284-9227-fb49f7f525cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff617088f770>]}
+[0m19:47:36.777257 [info ] [MainThread]: Found 2 models, 5 data tests, 1 source, 783 macros
+[0m19:47:36.778644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22d6ad58-7f19-4284-9227-fb49f7f525cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61bea4e390>]}
+[0m19:47:36.780010 [info ] [MainThread]: 
+[0m19:47:36.781310 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:47:36.782612 [info ] [MainThread]: 
+[0m19:47:36.784735 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m19:47:36.785443 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m19:47:36.786785 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog_format_demo_staging) - Creating connection
+[0m19:47:36.787512 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog_format_demo_staging'
+[0m19:47:36.789947 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog_format_demo_staging"
+[0m19:47:36.790739 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_staging: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "22d6ad58-7f19-4284-9227-fb49f7f525cc", "connection_name": "list_format_demo_catalog_format_demo_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'format_demo_catalog'
+  AND table_schema = 'format_demo_staging'
+
+  
+[0m19:47:36.791402 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:36.961959 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e7cb-168e-8e06-7de0f030f78b) - Created
+[0m19:47:37.275897 [debug] [ThreadPool]: SQL status: OK in 0.480 seconds
+[0m19:47:37.278700 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e7cb-168e-8e06-7de0f030f78b, command-id=01f1e388-e7d5-1842-a64d-6d57559119d4) - Closing
+[0m19:47:37.279788 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_staging: Close
+[0m19:47:37.280492 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e7cb-168e-8e06-7de0f030f78b) - Closing
+[0m19:47:37.344464 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog_format_demo_marts) - Creating connection
+[0m19:47:37.345584 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog_format_demo_marts'
+[0m19:47:37.347121 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog_format_demo_marts"
+[0m19:47:37.347894 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_marts: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "22d6ad58-7f19-4284-9227-fb49f7f525cc", "connection_name": "list_format_demo_catalog_format_demo_marts"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'format_demo_catalog'
+  AND table_schema = 'format_demo_marts'
+
+  
+[0m19:47:37.348829 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:37.493965 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e81c-1ac2-a3fd-2e08ab7478b1) - Created
+[0m19:47:37.840489 [debug] [ThreadPool]: SQL status: OK in 0.490 seconds
+[0m19:47:37.843380 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e81c-1ac2-a3fd-2e08ab7478b1, command-id=01f1e388-e826-1da4-9b65-25f8deeadd63) - Closing
+[0m19:47:37.844409 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_marts: Close
+[0m19:47:37.845112 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e81c-1ac2-a3fd-2e08ab7478b1) - Closing
+[0m19:47:37.905408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22d6ad58-7f19-4284-9227-fb49f7f525cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61713b66f0>]}
+[0m19:47:37.907915 [debug] [Thread-56 ]: Began running node model.analytics_demos.stg_events
+[0m19:47:37.908971 [debug] [Thread-56 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.analytics_demos.stg_events) - Creating connection
+[0m19:47:37.909740 [debug] [Thread-56 ]: Acquiring new databricks connection 'model.analytics_demos.stg_events'
+[0m19:47:37.910533 [debug] [Thread-56 ]: Began compiling node model.analytics_demos.stg_events
+[0m19:47:37.913031 [debug] [Thread-56 ]: Writing injected SQL for node "model.analytics_demos.stg_events"
+[0m19:47:37.914677 [debug] [Thread-56 ]: Began executing node model.analytics_demos.stg_events
+[0m19:47:37.915960 [debug] [Thread-56 ]: Finished running node model.analytics_demos.stg_events
+[0m19:47:37.917042 [debug] [Thread-56 ]: Began running node model.analytics_demos.fct_events_by_city
+[0m19:47:37.918070 [debug] [Thread-56 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.analytics_demos.fct_events_by_city) - Creating connection
+[0m19:47:37.918759 [debug] [Thread-56 ]: Acquiring new databricks connection 'model.analytics_demos.fct_events_by_city'
+[0m19:47:37.919375 [debug] [Thread-56 ]: Began compiling node model.analytics_demos.fct_events_by_city
+[0m19:47:37.922961 [debug] [Thread-56 ]: Writing injected SQL for node "model.analytics_demos.fct_events_by_city"
+[0m19:47:37.924371 [debug] [Thread-56 ]: Began executing node model.analytics_demos.fct_events_by_city
+[0m19:47:37.925488 [debug] [Thread-56 ]: Finished running node model.analytics_demos.fct_events_by_city
+[0m19:47:37.926190 [debug] [Thread-56 ]: Began running node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:47:37.927117 [debug] [Thread-56 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e) - Creating connection
+[0m19:47:37.927787 [debug] [Thread-56 ]: Acquiring new databricks connection 'test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e'
+[0m19:47:37.928512 [debug] [Thread-56 ]: Began compiling node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:47:37.938019 [debug] [Thread-56 ]: Writing injected SQL for node "test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e"
+[0m19:47:37.939503 [debug] [Thread-56 ]: Began executing node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:47:37.941022 [debug] [Thread-56 ]: Finished running node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:47:37.941741 [debug] [Thread-56 ]: Began running node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:47:37.942573 [debug] [Thread-56 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_city.c76a7ce38b) - Creating connection
+[0m19:47:37.943286 [debug] [Thread-56 ]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_city.c76a7ce38b'
+[0m19:47:37.943944 [debug] [Thread-56 ]: Began compiling node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:47:37.953146 [debug] [Thread-56 ]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_city.c76a7ce38b"
+[0m19:47:37.954539 [debug] [Thread-56 ]: Began executing node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:47:37.955511 [debug] [Thread-56 ]: Finished running node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:47:37.956222 [debug] [Thread-56 ]: Began running node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:47:37.957054 [debug] [Thread-56 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_event_date.f160b8d054) - Creating connection
+[0m19:47:37.957710 [debug] [Thread-56 ]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_event_date.f160b8d054'
+[0m19:47:37.958350 [debug] [Thread-56 ]: Began compiling node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:47:37.967510 [debug] [Thread-56 ]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_event_date.f160b8d054"
+[0m19:47:37.968994 [debug] [Thread-56 ]: Began executing node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:47:37.970022 [debug] [Thread-56 ]: Finished running node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:47:37.970774 [debug] [Thread-56 ]: Began running node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:47:37.971680 [debug] [Thread-56 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_event_id.715b3f7012) - Creating connection
+[0m19:47:37.972619 [debug] [Thread-56 ]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_event_id.715b3f7012'
+[0m19:47:37.973299 [debug] [Thread-56 ]: Began compiling node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:47:37.982379 [debug] [Thread-56 ]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_event_id.715b3f7012"
+[0m19:47:37.983813 [debug] [Thread-56 ]: Began executing node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:47:37.984836 [debug] [Thread-56 ]: Finished running node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:47:37.985510 [debug] [Thread-56 ]: Began running node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:47:37.986366 [debug] [Thread-56 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.unique_stg_events_event_id.66ebb17438) - Creating connection
+[0m19:47:37.987243 [debug] [Thread-56 ]: Acquiring new databricks connection 'test.analytics_demos.unique_stg_events_event_id.66ebb17438'
+[0m19:47:37.988007 [debug] [Thread-56 ]: Began compiling node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:47:38.001096 [debug] [Thread-56 ]: Writing injected SQL for node "test.analytics_demos.unique_stg_events_event_id.66ebb17438"
+[0m19:47:38.003379 [debug] [Thread-56 ]: Began executing node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:47:38.004614 [debug] [Thread-56 ]: Finished running node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:47:38.006856 [debug] [MainThread]: Command end result
+[0m19:47:38.069313 [debug] [MainThread]: Wrote artifact WritableManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/manifest.json
+[0m19:47:38.073671 [debug] [MainThread]: Wrote artifact SemanticManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/semantic_manifest.json
+[0m19:47:38.077697 [debug] [MainThread]: Wrote artifact OsiDocument to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/osi_document.json
+[0m19:47:38.079563 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/run_results.json
+[0m19:47:38.085340 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=generate_catalog) - Creating connection
+[0m19:47:38.086020 [debug] [MainThread]: Acquiring new databricks connection 'generate_catalog'
+[0m19:47:38.086628 [info ] [MainThread]: Building catalog
+[0m19:47:38.089228 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=('format_demo_catalog', 'format_demo')) - Creating connection
+[0m19:47:38.090015 [debug] [ThreadPool]: Acquiring new databricks connection '('format_demo_catalog', 'format_demo')'
+[0m19:47:38.094907 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo')"
+[0m19:47:38.095672 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "22d6ad58-7f19-4284-9227-fb49f7f525cc", "connection_name": "('format_demo_catalog', 'format_demo')"} */
+
+    
+SELECT current_catalog()
+
+  
+[0m19:47:38.096361 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:38.270310 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e88f-16ec-a4e2-f17625589584) - Created
+[0m19:47:38.460023 [debug] [ThreadPool]: SQL status: OK in 0.360 seconds
+[0m19:47:38.462588 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e88f-16ec-a4e2-f17625589584, command-id=01f1e388-e89d-1b73-bb2b-0a23de66e48b) - Closing
+[0m19:47:38.468443 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo')"
+[0m19:47:38.469279 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "22d6ad58-7f19-4284-9227-fb49f7f525cc", "connection_name": "('format_demo_catalog', 'format_demo')"} */
+
+    
+SHOW TABLE EXTENDED IN `format_demo_catalog`.`format_demo` LIKE 'events_delta'
+
+  
+[0m19:47:38.862241 [debug] [ThreadPool]: SQL status: OK in 0.390 seconds
+[0m19:47:38.865101 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e88f-16ec-a4e2-f17625589584, command-id=01f1e388-e8bb-144a-9766-33d21a807db6) - Closing
+[0m19:47:38.871085 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo'): Close
+[0m19:47:38.872098 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e88f-16ec-a4e2-f17625589584) - Closing
+[0m19:47:38.926619 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=('format_demo_catalog', 'format_demo_marts')) - Creating connection
+[0m19:47:38.927617 [debug] [ThreadPool]: Acquiring new databricks connection '('format_demo_catalog', 'format_demo_marts')'
+[0m19:47:38.929673 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo_marts')"
+[0m19:47:38.930466 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_marts'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "22d6ad58-7f19-4284-9227-fb49f7f525cc", "connection_name": "('format_demo_catalog', 'format_demo_marts')"} */
+
+    
+SELECT current_catalog()
+
+  
+[0m19:47:38.931183 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:39.078273 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e90e-1563-9cc0-d403890d7f09) - Created
+[0m19:47:39.220222 [debug] [ThreadPool]: SQL status: OK in 0.290 seconds
+[0m19:47:39.222750 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e90e-1563-9cc0-d403890d7f09, command-id=01f1e388-e918-1ba4-bde3-29f29bfadacc) - Closing
+[0m19:47:39.225396 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo_marts')"
+[0m19:47:39.226210 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_marts'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "22d6ad58-7f19-4284-9227-fb49f7f525cc", "connection_name": "('format_demo_catalog', 'format_demo_marts')"} */
+
+    
+SHOW TABLE EXTENDED IN `format_demo_catalog`.`format_demo_marts` LIKE 'fct_events_by_city'
+
+  
+[0m19:47:39.443267 [debug] [ThreadPool]: SQL status: OK in 0.220 seconds
+[0m19:47:39.446928 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e90e-1563-9cc0-d403890d7f09, command-id=01f1e388-e92e-1dd5-a332-e3f8c50daf20) - Closing
+[0m19:47:39.450730 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_marts'): Close
+[0m19:47:39.452073 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e90e-1563-9cc0-d403890d7f09) - Closing
+[0m19:47:39.517784 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=('format_demo_catalog', 'format_demo_staging')) - Creating connection
+[0m19:47:39.518842 [debug] [ThreadPool]: Acquiring new databricks connection '('format_demo_catalog', 'format_demo_staging')'
+[0m19:47:39.520984 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo_staging')"
+[0m19:47:39.521868 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_staging'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "22d6ad58-7f19-4284-9227-fb49f7f525cc", "connection_name": "('format_demo_catalog', 'format_demo_staging')"} */
+
+    
+SELECT current_catalog()
+
+  
+[0m19:47:39.522614 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:39.669978 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e969-1767-b88d-3d146d1fd4a8) - Created
+[0m19:47:39.819617 [debug] [ThreadPool]: SQL status: OK in 0.300 seconds
+[0m19:47:39.822081 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e969-1767-b88d-3d146d1fd4a8, command-id=01f1e388-e973-13c3-ab49-c0db02efd9b4) - Closing
+[0m19:47:39.824296 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo_staging')"
+[0m19:47:39.825087 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_staging'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "22d6ad58-7f19-4284-9227-fb49f7f525cc", "connection_name": "('format_demo_catalog', 'format_demo_staging')"} */
+
+    
+SHOW TABLE EXTENDED IN `format_demo_catalog`.`format_demo_staging` LIKE 'stg_events'
+
+  
+[0m19:47:40.010842 [debug] [ThreadPool]: SQL status: OK in 0.180 seconds
+[0m19:47:40.013701 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e388-e969-1767-b88d-3d146d1fd4a8, command-id=01f1e388-e98a-1f4a-86bb-46db84d06032) - Closing
+[0m19:47:40.015971 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_staging'): Close
+[0m19:47:40.016944 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e388-e969-1767-b88d-3d146d1fd4a8) - Closing
+[0m19:47:40.094361 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/catalog.json
+[0m19:47:40.171150 [debug] [MainThread]: Wrote artifact WritableManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/manifest.json
+[0m19:47:40.175198 [debug] [MainThread]: Wrote artifact SemanticManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/semantic_manifest.json
+[0m19:47:40.178940 [debug] [MainThread]: Wrote artifact OsiDocument to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/osi_document.json
+[0m19:47:40.179548 [info ] [MainThread]: Catalog written to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/catalog.json
+[0m19:47:40.181375 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 4.2194886, "process_in_blocks": "190072", "process_kernel_time": 1.296665, "process_mem_max_rss": "469948", "process_out_blocks": "35712", "process_user_time": 15.270729}
+[0m19:47:40.182289 [debug] [MainThread]: Command `cli docs generate` succeeded at 19:47:40.182173 after 4.22 seconds
+[0m19:47:40.183003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171b61a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61714d4ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61714d7b30>]}
+[0m19:47:40.183671 [debug] [MainThread]: Flushing usage events
+[0m19:47:40.255888 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:58:02.314613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6176873a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61708e1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff616f29cc80>]}
+
+
+============================== 19:58:02.315476 | 63800fa0-378c-4af6-b485-08e528a1f074 ==============================
+[0m19:58:02.315476 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:58:02.317087 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'invocation_command': 'dbt -f /local_disk0/sandboxapi/shared-461508c5-9059-3223-8b70-731b281a38c2-a22c7246-c134-459c-995f-4c0f83a10ad5/1130522289779974426_1/connection.json', 'debug': 'False', 'log_path': '/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/logs', 'cache_selected_only': 'False', 'target_path': 'None', 'hints_enabled': 'True', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'profiles_dir': '/Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos', 'quiet': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'log_format': 'default', 'warn_error': 'None', 'no_print': 'None'}
+[0m19:58:02.567961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '63800fa0-378c-4af6-b485-08e528a1f074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff617137d2b0>]}
+[0m19:58:02.570739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '63800fa0-378c-4af6-b485-08e528a1f074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61708c43b0>]}
+[0m19:58:02.572218 [info ] [MainThread]: Registered adapter: databricks=1.13.0
+[0m19:58:02.789868 [debug] [MainThread]: checksum: cfe165a3fa79b83e28da3a652e31f4b42d9764df65ae874ff942533f6b52a611, vars: {}, profile: databricks_demo, target: dev, version: 1.12.6
+[0m19:58:02.839721 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:58:02.840611 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:58:02.841264 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:58:02.846856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '63800fa0-378c-4af6-b485-08e528a1f074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61713a1c40>]}
+[0m19:58:02.850356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '63800fa0-378c-4af6-b485-08e528a1f074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61715f79b0>]}
+[0m19:58:02.851121 [info ] [MainThread]: Found 2 models, 5 data tests, 1 source, 783 macros
+[0m19:58:02.853771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '63800fa0-378c-4af6-b485-08e528a1f074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61715f7c80>]}
+[0m19:58:02.855129 [info ] [MainThread]: 
+[0m19:58:02.856498 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:58:02.857981 [info ] [MainThread]: 
+[0m19:58:02.859415 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m19:58:02.860150 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m19:58:02.861418 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog_format_demo_staging) - Creating connection
+[0m19:58:02.862107 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog_format_demo_staging'
+[0m19:58:02.863993 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog_format_demo_staging"
+[0m19:58:02.864681 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_staging: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "63800fa0-378c-4af6-b485-08e528a1f074", "connection_name": "list_format_demo_catalog_format_demo_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'format_demo_catalog'
+  AND table_schema = 'format_demo_staging'
+
+  
+[0m19:58:02.865301 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:03.355681 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5d12-1ac1-96c7-6857023798ca) - Created
+[0m19:58:03.809002 [debug] [ThreadPool]: SQL status: OK in 0.940 seconds
+[0m19:58:03.812127 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e38a-5d12-1ac1-96c7-6857023798ca, command-id=01f1e38a-5d32-1a7f-a898-85c738ec46c8) - Closing
+[0m19:58:03.813238 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_staging: Close
+[0m19:58:03.814112 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5d12-1ac1-96c7-6857023798ca) - Closing
+[0m19:58:03.872733 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_format_demo_catalog_format_demo_marts) - Creating connection
+[0m19:58:03.873922 [debug] [ThreadPool]: Acquiring new databricks connection 'list_format_demo_catalog_format_demo_marts'
+[0m19:58:03.875464 [debug] [ThreadPool]: Using databricks connection "list_format_demo_catalog_format_demo_marts"
+[0m19:58:03.876233 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_marts: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "63800fa0-378c-4af6-b485-08e528a1f074", "connection_name": "list_format_demo_catalog_format_demo_marts"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'format_demo_catalog'
+  AND table_schema = 'format_demo_marts'
+
+  
+[0m19:58:03.876965 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:04.041490 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5d8e-17f5-8ef6-0dcdbf20f29c) - Created
+[0m19:58:04.373271 [debug] [ThreadPool]: SQL status: OK in 0.500 seconds
+[0m19:58:04.376132 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e38a-5d8e-17f5-8ef6-0dcdbf20f29c, command-id=01f1e38a-5d9a-1ab6-8492-dcaa90efa900) - Closing
+[0m19:58:04.377123 [debug] [ThreadPool]: On list_format_demo_catalog_format_demo_marts: Close
+[0m19:58:04.377857 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5d8e-17f5-8ef6-0dcdbf20f29c) - Closing
+[0m19:58:04.499683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '63800fa0-378c-4af6-b485-08e528a1f074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61717e9b50>]}
+[0m19:58:04.502116 [debug] [Thread-118]: Began running node model.analytics_demos.stg_events
+[0m19:58:04.503119 [debug] [Thread-118]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.analytics_demos.stg_events) - Creating connection
+[0m19:58:04.503872 [debug] [Thread-118]: Acquiring new databricks connection 'model.analytics_demos.stg_events'
+[0m19:58:04.504590 [debug] [Thread-118]: Began compiling node model.analytics_demos.stg_events
+[0m19:58:04.506994 [debug] [Thread-118]: Writing injected SQL for node "model.analytics_demos.stg_events"
+[0m19:58:04.508923 [debug] [Thread-118]: Began executing node model.analytics_demos.stg_events
+[0m19:58:04.510006 [debug] [Thread-118]: Finished running node model.analytics_demos.stg_events
+[0m19:58:04.511152 [debug] [Thread-118]: Began running node model.analytics_demos.fct_events_by_city
+[0m19:58:04.512035 [debug] [Thread-118]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.analytics_demos.fct_events_by_city) - Creating connection
+[0m19:58:04.512796 [debug] [Thread-118]: Acquiring new databricks connection 'model.analytics_demos.fct_events_by_city'
+[0m19:58:04.513486 [debug] [Thread-118]: Began compiling node model.analytics_demos.fct_events_by_city
+[0m19:58:04.516992 [debug] [Thread-118]: Writing injected SQL for node "model.analytics_demos.fct_events_by_city"
+[0m19:58:04.518588 [debug] [Thread-118]: Began executing node model.analytics_demos.fct_events_by_city
+[0m19:58:04.519717 [debug] [Thread-118]: Finished running node model.analytics_demos.fct_events_by_city
+[0m19:58:04.520859 [debug] [Thread-118]: Began running node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:58:04.522008 [debug] [Thread-118]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e) - Creating connection
+[0m19:58:04.524743 [debug] [Thread-118]: Acquiring new databricks connection 'test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e'
+[0m19:58:04.525608 [debug] [Thread-118]: Began compiling node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:58:04.537673 [debug] [Thread-118]: Writing injected SQL for node "test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e"
+[0m19:58:04.540230 [debug] [Thread-118]: Began executing node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:58:04.541610 [debug] [Thread-118]: Finished running node test.analytics_demos.accepted_values_stg_events_city__STOCKHOLM__GOTHENBURG__MALMO.9fd4bde13e
+[0m19:58:04.542532 [debug] [Thread-118]: Began running node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:58:04.543690 [debug] [Thread-118]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_city.c76a7ce38b) - Creating connection
+[0m19:58:04.544402 [debug] [Thread-118]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_city.c76a7ce38b'
+[0m19:58:04.545162 [debug] [Thread-118]: Began compiling node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:58:04.555763 [debug] [Thread-118]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_city.c76a7ce38b"
+[0m19:58:04.557612 [debug] [Thread-118]: Began executing node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:58:04.558718 [debug] [Thread-118]: Finished running node test.analytics_demos.not_null_stg_events_city.c76a7ce38b
+[0m19:58:04.559470 [debug] [Thread-118]: Began running node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:58:04.560440 [debug] [Thread-118]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_event_date.f160b8d054) - Creating connection
+[0m19:58:04.561126 [debug] [Thread-118]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_event_date.f160b8d054'
+[0m19:58:04.562029 [debug] [Thread-118]: Began compiling node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:58:04.578636 [debug] [Thread-118]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_event_date.f160b8d054"
+[0m19:58:04.580278 [debug] [Thread-118]: Began executing node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:58:04.581567 [debug] [Thread-118]: Finished running node test.analytics_demos.not_null_stg_events_event_date.f160b8d054
+[0m19:58:04.582442 [debug] [Thread-118]: Began running node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:58:04.583465 [debug] [Thread-118]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.not_null_stg_events_event_id.715b3f7012) - Creating connection
+[0m19:58:04.584273 [debug] [Thread-118]: Acquiring new databricks connection 'test.analytics_demos.not_null_stg_events_event_id.715b3f7012'
+[0m19:58:04.585019 [debug] [Thread-118]: Began compiling node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:58:04.594914 [debug] [Thread-118]: Writing injected SQL for node "test.analytics_demos.not_null_stg_events_event_id.715b3f7012"
+[0m19:58:04.596671 [debug] [Thread-118]: Began executing node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:58:04.600792 [debug] [Thread-118]: Finished running node test.analytics_demos.not_null_stg_events_event_id.715b3f7012
+[0m19:58:04.601622 [debug] [Thread-118]: Began running node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:58:04.602661 [debug] [Thread-118]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.analytics_demos.unique_stg_events_event_id.66ebb17438) - Creating connection
+[0m19:58:04.603363 [debug] [Thread-118]: Acquiring new databricks connection 'test.analytics_demos.unique_stg_events_event_id.66ebb17438'
+[0m19:58:04.604033 [debug] [Thread-118]: Began compiling node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:58:04.618269 [debug] [Thread-118]: Writing injected SQL for node "test.analytics_demos.unique_stg_events_event_id.66ebb17438"
+[0m19:58:04.619916 [debug] [Thread-118]: Began executing node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:58:04.621231 [debug] [Thread-118]: Finished running node test.analytics_demos.unique_stg_events_event_id.66ebb17438
+[0m19:58:04.624228 [debug] [MainThread]: Command end result
+[0m19:58:04.698294 [debug] [MainThread]: Wrote artifact WritableManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/manifest.json
+[0m19:58:04.703672 [debug] [MainThread]: Wrote artifact SemanticManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/semantic_manifest.json
+[0m19:58:04.707898 [debug] [MainThread]: Wrote artifact OsiDocument to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/osi_document.json
+[0m19:58:04.711149 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/run_results.json
+[0m19:58:04.717001 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=generate_catalog) - Creating connection
+[0m19:58:04.717688 [debug] [MainThread]: Acquiring new databricks connection 'generate_catalog'
+[0m19:58:04.718365 [info ] [MainThread]: Building catalog
+[0m19:58:04.721437 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=('format_demo_catalog', 'format_demo')) - Creating connection
+[0m19:58:04.722327 [debug] [ThreadPool]: Acquiring new databricks connection '('format_demo_catalog', 'format_demo')'
+[0m19:58:04.724716 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo')"
+[0m19:58:04.725598 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "63800fa0-378c-4af6-b485-08e528a1f074", "connection_name": "('format_demo_catalog', 'format_demo')"} */
+
+    
+SELECT current_catalog()
+
+  
+[0m19:58:04.726425 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:04.908383 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5e12-17fa-ab41-44e222afb60c) - Created
+[0m19:58:05.044306 [debug] [ThreadPool]: SQL status: OK in 0.320 seconds
+[0m19:58:05.046832 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e38a-5e12-17fa-ab41-44e222afb60c, command-id=01f1e38a-5e1e-1f0f-9837-c892cdd02440) - Closing
+[0m19:58:05.049135 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo')"
+[0m19:58:05.049889 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "63800fa0-378c-4af6-b485-08e528a1f074", "connection_name": "('format_demo_catalog', 'format_demo')"} */
+
+    
+SHOW TABLE EXTENDED IN `format_demo_catalog`.`format_demo` LIKE 'events_delta'
+
+  
+[0m19:58:05.457279 [debug] [ThreadPool]: SQL status: OK in 0.410 seconds
+[0m19:58:05.461400 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e38a-5e12-17fa-ab41-44e222afb60c, command-id=01f1e38a-5e34-114d-9a10-fb1cce74f9ca) - Closing
+[0m19:58:05.463728 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo'): Close
+[0m19:58:05.464621 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5e12-17fa-ab41-44e222afb60c) - Closing
+[0m19:58:05.521900 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=('format_demo_catalog', 'format_demo_marts')) - Creating connection
+[0m19:58:05.522835 [debug] [ThreadPool]: Acquiring new databricks connection '('format_demo_catalog', 'format_demo_marts')'
+[0m19:58:05.526088 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo_marts')"
+[0m19:58:05.527350 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_marts'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "63800fa0-378c-4af6-b485-08e528a1f074", "connection_name": "('format_demo_catalog', 'format_demo_marts')"} */
+
+    
+SELECT current_catalog()
+
+  
+[0m19:58:05.528179 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:05.692951 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5e89-14f3-906a-e9a0b0d09517) - Created
+[0m19:58:05.828413 [debug] [ThreadPool]: SQL status: OK in 0.300 seconds
+[0m19:58:05.831077 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e38a-5e89-14f3-906a-e9a0b0d09517, command-id=01f1e38a-5e97-1226-8142-477d44b9ce29) - Closing
+[0m19:58:05.833462 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo_marts')"
+[0m19:58:05.834287 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_marts'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "63800fa0-378c-4af6-b485-08e528a1f074", "connection_name": "('format_demo_catalog', 'format_demo_marts')"} */
+
+    
+SHOW TABLE EXTENDED IN `format_demo_catalog`.`format_demo_marts` LIKE 'fct_events_by_city'
+
+  
+[0m19:58:06.098822 [debug] [ThreadPool]: SQL status: OK in 0.260 seconds
+[0m19:58:06.101691 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e38a-5e89-14f3-906a-e9a0b0d09517, command-id=01f1e38a-5eab-1a64-8776-33b6708d28ea) - Closing
+[0m19:58:06.104124 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_marts'): Close
+[0m19:58:06.104979 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5e89-14f3-906a-e9a0b0d09517) - Closing
+[0m19:58:06.160138 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=('format_demo_catalog', 'format_demo_staging')) - Creating connection
+[0m19:58:06.161350 [debug] [ThreadPool]: Acquiring new databricks connection '('format_demo_catalog', 'format_demo_staging')'
+[0m19:58:06.165609 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo_staging')"
+[0m19:58:06.166423 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_staging'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "63800fa0-378c-4af6-b485-08e528a1f074", "connection_name": "('format_demo_catalog', 'format_demo_staging')"} */
+
+    
+SELECT current_catalog()
+
+  
+[0m19:58:06.167264 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:06.335116 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5eeb-17cd-89f3-471a3ffec60c) - Created
+[0m19:58:06.466493 [debug] [ThreadPool]: SQL status: OK in 0.300 seconds
+[0m19:58:06.469814 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e38a-5eeb-17cd-89f3-471a3ffec60c, command-id=01f1e38a-5ef8-166c-aacc-ab598bd05c85) - Closing
+[0m19:58:06.472505 [debug] [ThreadPool]: Using databricks connection "('format_demo_catalog', 'format_demo_staging')"
+[0m19:58:06.473360 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_staging'): /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "databricks_demo", "target_name": "dev", "invocation_id": "63800fa0-378c-4af6-b485-08e528a1f074", "connection_name": "('format_demo_catalog', 'format_demo_staging')"} */
+
+    
+SHOW TABLE EXTENDED IN `format_demo_catalog`.`format_demo_staging` LIKE 'stg_events'
+
+  
+[0m19:58:06.659797 [debug] [ThreadPool]: SQL status: OK in 0.190 seconds
+[0m19:58:06.664393 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1e38a-5eeb-17cd-89f3-471a3ffec60c, command-id=01f1e38a-5f0d-17c1-b208-8b7e571cb3e0) - Closing
+[0m19:58:06.666884 [debug] [ThreadPool]: On ('format_demo_catalog', 'format_demo_staging'): Close
+[0m19:58:06.668135 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1e38a-5eeb-17cd-89f3-471a3ffec60c) - Closing
+[0m19:58:06.728619 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/catalog.json
+[0m19:58:06.813710 [debug] [MainThread]: Wrote artifact WritableManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/manifest.json
+[0m19:58:06.818155 [debug] [MainThread]: Wrote artifact SemanticManifest to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/semantic_manifest.json
+[0m19:58:06.822351 [debug] [MainThread]: Wrote artifact OsiDocument to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/osi_document.json
+[0m19:58:06.823025 [info ] [MainThread]: Catalog written to /Workspace/Users/puli.reddy@gmail.com/cloud_analytics-na/databricks/analytics_demos/target/catalog.json
+[0m19:58:06.824777 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 4.695786, "process_in_blocks": "190088", "process_kernel_time": 1.662156, "process_mem_max_rss": "483316", "process_out_blocks": "37184", "process_user_time": 18.222914}
+[0m19:58:06.825695 [debug] [MainThread]: Command `cli docs generate` succeeded at 19:58:06.825573 after 4.70 seconds
+[0m19:58:06.826448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff6171875040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff616f1d74a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff61769b4e90>]}
+[0m19:58:06.827149 [debug] [MainThread]: Flushing usage events
+[0m19:58:06.913846 [debug] [MainThread]: An error was encountered while trying to flush usage events
